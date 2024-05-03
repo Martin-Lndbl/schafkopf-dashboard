@@ -1,3 +1,4 @@
+import NewGame from "layouts/newgame";
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import RTL from "layouts/rtl";
@@ -9,6 +10,14 @@ import SignUp from "layouts/authentication/sign-up";
 import Icon from "@mui/material/Icon";
 
 const routes = [
+  {
+    type: "collapse",
+    name: "New Game",
+    key: "add",
+    icon: <Icon fontSize="small">add</Icon>,
+    route: "/add",
+    component: <NewGame />,
+  },
   {
     type: "collapse",
     name: "Dashboard",
@@ -24,14 +33,6 @@ const routes = [
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
     component: <Tables />,
-  },
-  {
-    type: "collapse",
-    name: "RTL",
-    key: "rtl",
-    icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-    route: "/rtl",
-    component: <RTL />,
   },
   {
     type: "collapse",

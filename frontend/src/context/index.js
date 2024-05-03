@@ -65,6 +65,7 @@ function SchafkopfUIControllerProvider({ children }) {
   return <SchafkopfUI.Provider value={value}>{children}</SchafkopfUI.Provider>;
 }
 
+// Material Dashboard 2 React custom hook for using context
 function useSchafkopfUIController() {
   const context = useContext(SchafkopfUI);
 
